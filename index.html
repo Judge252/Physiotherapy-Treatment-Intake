@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#0a1020">
+    <meta name="color-scheme" content="dark">
+    <meta name="description" content="טופס קבלה לטיפול פיזיותרפיה של TheClinic">
+    <title>טופס קבלה לטיפול פיזיותרפיה | TheClinic</title>
+    <link rel="icon" type="image/png" href="assets/theclinic-logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#medical-consultation-form">מעבר ישירות לטופס</a>
+
+    <div class="site-background" aria-hidden="true">
+        <span class="background-orb orb-gold"></span>
+        <span class="background-orb orb-teal"></span>
+        <span class="background-orb orb-blue"></span>
+        <span class="noise-layer"></span>
+    </div>
+
+    <main class="page-shell">
+        <header class="clinic-header" aria-labelledby="page-title">
+            <div class="logo-panel">
+                <img src="assets/theclinic-logo.png" alt="TheClinic Healthcare and Therapy" class="clinic-logo" width="2158" height="817">
+            </div>
+
+            <div class="header-copy">
+                <p class="header-kicker">
+                    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3 5 6v5c0 4.7 2.8 8.9 7 10 4.2-1.1 7-5.3 7-10V6l-7-3Zm0 4v8m-4-4h8"/></svg>
+                    הקליניקה – מרכז רופאי אורתופדי ונוירולוגי
+                </p>
+                <h1 id="page-title">טופס קבלה לטיפול פיזיותרפיה</h1>
+                <p class="intro-text">יש למלא את פרטי הקבלה והבדיקה. שדות החובה מסומנים בכוכבית.</p>
+
+                <address class="clinic-contact" aria-label="פרטי התקשרות עם הקליניקה">
+                    <span>סניף טורעאן, רח' אבו בכר <bdi dir="ltr">13</bdi></span>
+                    <span>סניף רמלה, ד״ר סאלק <bdi dir="ltr">25</bdi></span>
+                    <a href="tel:+972526020026" dir="ltr">052-6020026</a>
+                    <a href="tel:+97246034691" dir="ltr">04-6034691</a>
+                    <a href="mailto:The_clinic_t@gmail.com" dir="ltr">The_clinic_t@gmail.com</a>
+                </address>
+            </div>
+        </header>
+
+        <div class="privacy-callout" role="note">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 10V8a5 5 0 0 1 10 0v2m-9 0h8a2 2 0 0 1 2 2v7H6v-7a2 2 0 0 1 2-2Zm4 4v2"/></svg>
+            <span>המידע בטופס רפואי ומוגן. הנתונים נשלחים ישירות לקליניקה ואינם נשמרים בדפדפן.</span>
+        </div>
+
+        <form id="medical-consultation-form" novalidate>
+<section class="form-section" aria-labelledby="patient-details-heading"><div class="section-heading"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></span><div><h2 id="patient-details-heading">פרטי המטופל</h2></div></div><div class="field-grid"><div class="field-group"><label for="patientName">שם המטופל <span class="required-mark" aria-hidden="true">*</span></label><input id="patientName" name="patientName" required type="text" maxlength="120" minlength="2" autocomplete="name"></div>
+<div class="field-group"><label for="patientPhone">טלפון <span class="required-mark" aria-hidden="true">*</span></label><input id="patientPhone" name="patientPhone" required dir="ltr" type="tel" maxlength="24" inputmode="tel" autocomplete="tel"></div>
+<div class="field-group"><label for="address">כתובת</label><input id="address" name="address" type="text" maxlength="240"></div>
+<div class="field-group"><label for="patientId">ת.ז</label><input id="patientId" name="patientId" dir="ltr" type="text" maxlength="20" inputmode="numeric"></div>
+<div class="field-group"><label for="age">גיל</label><input id="age" name="age" type="number" min="0" max="130" step="1"></div>
+<div class="field-group"><label for="gender">מין</label><select id="gender" name="gender"><option value="">לא צוין</option><option value="זכר">זכר</option><option value="נקבה">נקבה</option><option value="אחר">אחר</option></select></div></div></section>
+
+<section class="form-section" aria-labelledby="medical-history-heading"><div class="section-heading"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></span><div><h2 id="medical-history-heading">סיבת הפניה והיסטוריה רפואית</h2></div></div><div class="field-grid"><div class="field-group field-wide"><label for="referralReason">סיבת הפניה/תלונות</label><textarea id="referralReason" name="referralReason" rows="3" maxlength="3000"></textarea></div>
+<div class="field-group"><label for="examinedByDoctor">האם המטופל נבדק ע&quot;י רופא</label><select id="examinedByDoctor" name="examinedByDoctor"><option value="">לא צוין</option><option value="כן">כן</option><option value="לא">לא</option></select></div>
+<div class="field-group"><label for="doctorSpecialty">התמחות</label><select id="doctorSpecialty" name="doctorSpecialty"><option value="">לא צוין</option><option value="רופא משפחה">רופא משפחה</option><option value="אורתופד">אורתופד</option><option value="נוירולוג">נוירולוג</option><option value="אא&quot;ג">אא&quot;ג</option><option value="פה ולסת">פה ולסת</option><option value="אחר">אחר</option></select></div>
+<div class="field-group field-wide"><label for="doctorDiagnosis">אבחנת רופא</label><textarea id="doctorDiagnosis" name="doctorDiagnosis" rows="3" maxlength="3000"></textarea></div>
+<div class="field-group field-wide"><label for="backgroundDiseases">מחלות רקע והיסטוריה רפואית</label><textarea id="backgroundDiseases" name="backgroundDiseases" rows="3" maxlength="3000"></textarea></div>
+<div class="field-group field-wide"><label for="regularMedications">תרופות קבועות</label><textarea id="regularMedications" name="regularMedications" rows="3" maxlength="3000"></textarea></div></div></section>
+
+<section class="form-section" aria-labelledby="tests-and-lifestyle-heading"><div class="section-heading"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></span><div><h2 id="tests-and-lifestyle-heading">בדיקות ואורח חיים</h2></div></div><div class="field-grid"><div class="field-group field-wide"><label for="specialTests">בדיקות מיוחדות</label><textarea id="specialTests" name="specialTests" aria-describedby="specialTests-help" rows="3" maxlength="3000"></textarea><small id="specialTests-help">האם המטופל עבר לאחרונה בדיקות כמו רנטגן, CT, MRI...</small></div>
+<div class="field-group field-wide"><label for="imagingResults">תוצאות בדיקה והדמיה</label><textarea id="imagingResults" name="imagingResults" rows="3" maxlength="3000"></textarea></div>
+<div class="field-group field-wide"><label for="bloodTests">בדיקות דם</label><textarea id="bloodTests" name="bloodTests" aria-describedby="bloodTests-help" rows="3" maxlength="3000"></textarea><small id="bloodTests-help">האם עשה לאחרונה בדיקות דם, האם היו חסרים או משהו חריג</small></div>
+<div class="field-group field-wide"><label for="occupationActivity">עיסוק – רמת הפעילות הגופנית</label><textarea id="occupationActivity" name="occupationActivity" aria-describedby="occupationActivity-help" rows="3" maxlength="3000"></textarea><small id="occupationActivity-help">במה הוא עובד? האם הוא פעיל גופנית? מתאמן? נא לפרט.</small></div>
+<div class="field-group field-wide"><label for="nutritionHabits">הרגלי תזונה</label><textarea id="nutritionHabits" name="nutritionHabits" aria-describedby="nutritionHabits-help" rows="3" maxlength="3000"></textarea><small id="nutritionHabits-help">האם המטופל נמצא בדיאטה מסוימת? אלרגיה? נמנע מאוכל מסוים? נא לפרט.</small></div></div></section>
+
+<section class="form-section" aria-labelledby="physical-examination-heading"><div class="section-heading"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></span><div><h2 id="physical-examination-heading">בדיקה פיזיקאלית</h2></div></div><div class="field-grid"><div class="field-group"><label for="examinationType">בדיקה פיזיקאלית</label><select id="examinationType" name="examinationType"><option value="">לא צוין</option><option value="אורתופדית">אורתופדית</option><option value="נוירולוגית">נוירולוגית</option><option value="אחר">אחר</option></select></div>
+<div class="field-group field-wide"><label for="physicalExamination">ממצאי בדיקה פיזיקאלית</label><textarea id="physicalExamination" name="physicalExamination" rows="3" maxlength="3000"></textarea></div>
+<div class="field-group"><label for="vasPainScore">כאב - לפי VAS</label><select id="vasPainScore" name="vasPainScore"><option value="">לא צוין</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select></div></div></section>
+
+<section class="form-section" aria-labelledby="clinical-conclusion-heading"><div class="section-heading"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></span><div><h2 id="clinical-conclusion-heading">סיכום בדיקה ותכנית טיפול</h2></div></div><div class="field-grid"><div class="field-group field-wide"><label for="consultationSummary">סיכום בדיקה וייעוץ</label><textarea id="consultationSummary" name="consultationSummary" rows="3" maxlength="4000"></textarea></div>
+<div class="field-group field-wide"><label for="diagnosis">אבחנה פיזיותרפיסט</label><textarea id="diagnosis" name="diagnosis" rows="3" maxlength="3000"></textarea></div>
+<div class="field-group field-wide"><label for="treatmentPlan">תכנית טיפול והמלצות</label><textarea id="treatmentPlan" name="treatmentPlan" rows="3" maxlength="4000"></textarea></div></div></section>
+
+<section class="form-section" aria-labelledby="physiotherapist-details-heading"><div class="section-heading"><span class="section-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg></span><div><h2 id="physiotherapist-details-heading">פרטי הפיזיותרפיסט</h2></div></div><div class="field-grid"><div class="field-group"><label for="physiotherapistName">שם הפיזיותרפיסט</label><input id="physiotherapistName" name="physiotherapistName" type="text" maxlength="120"></div>
+<div class="field-group"><label for="licenseNumber">מספר רישיון</label><input id="licenseNumber" name="licenseNumber" dir="ltr" type="text" maxlength="60"></div>
+<div class="field-group"><label for="physiotherapistSignature">חתימה</label><input id="physiotherapistSignature" name="physiotherapistSignature" type="text" maxlength="120"></div>
+<div class="field-group"><label for="examinationDate">תאריך</label><input id="examinationDate" name="examinationDate" dir="ltr" type="date" maxlength="10"></div></div></section>
+            <p id="form-status" class="sr-only" role="status" aria-live="polite"></p>
+        </form>
+    </main>
+
+    <div class="action-bar">
+        <div class="action-inner">
+            <p>המסמך ייווצר כקובץ <bdi dir="ltr">PDF</bdi> ויישלח לקליניקה.</p>
+            <button type="submit" form="medical-consultation-form" id="submit-button" class="submit-button" data-label="יצירה ושליחה">
+                <span class="button-label">יצירה ושליחה</span>
+                <svg class="button-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="m21 3-8 18-3-7-7-3 18-8ZM10 14l4-4"/></svg>
+                <span class="loading-spinner" aria-hidden="true"></span>
+            </button>
+        </div>
+    </div>
+
+    <dialog id="message-dialog" class="message-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-description">
+        <div class="dialog-icon" aria-hidden="true"></div>
+        <h2 id="dialog-title"></h2>
+        <p id="dialog-description"></p>
+        <button type="button" id="dialog-close">סגירה</button>
+    </dialog>
+
+    <script src="schema.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
